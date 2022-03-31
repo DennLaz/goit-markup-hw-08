@@ -1,0 +1,12 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+// Comon style
+@import "./utils/base";
+
+// Components style
+@import "./components/navigatio";
+@import "./components/contact";
+@import "./components/filter-pf";
+@import "./components/work-pf";
+@import "./components/footer";

@@ -1,0 +1,16 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+// Comon style
+@import "./utils/base";
+
+// Components style
+@import "./components/navigatio";
+@import "./components/contact";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/feature";
+@import "./components/work";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";

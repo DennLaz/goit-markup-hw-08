@@ -17,6 +17,33 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+
+  .btn__meny {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    &.btn__icon-close {
+      display: none;
+    }
+  
+    &.btn__meny--is-open .btn__icon-close {
+      display: block;
+  
+    }
+  
+    &.btn__meny--is-open .btn__icon-open {
+      display: none;
+    }
+  
+  
+  }
+}
+
 .nav__list {
   @extend %list;
   display: flex;

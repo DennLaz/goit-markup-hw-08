@@ -1,11 +1,19 @@
 .items {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
 
-  &__desc {
-    width: calc((100% - 60px) / 3);
+  // &__desc {
+  //   width: calc((100% - 60px) / 3);
+  // }
+}
+
+.items__desc{
+  margin-bottom: 30px;
+
+  &--last{
+    margin: 0%;
   }
 }
 
@@ -29,6 +37,8 @@
 
 .items__img {
   display: block;
+  max-width: 450px;
+  width: 100%;
 }
 
 .items__overlay {

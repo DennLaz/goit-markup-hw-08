@@ -1,15 +1,23 @@
 .team {
   background-color: var(--grey-color);
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .team__desc {
-  width: calc((100%-90px) / 4);
+  // width: calc((100%-90px) / 4);
   background-color: var(--bg-color);
+  margin-bottom: 30px;
+
+  &--last{
+    margin-bottom: 0;
+  }
+
 }
 
 .team__img {
   display: block;
+  max-width: 450px;
+  width: 100%;
 }
 
 .box {

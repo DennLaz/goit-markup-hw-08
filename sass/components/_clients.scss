@@ -1,12 +1,12 @@
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
+    width: 210px;
+    height: 94px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     color: #afb1b8;
@@ -22,6 +22,8 @@
 .clients__list {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 

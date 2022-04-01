@@ -1,13 +1,14 @@
-// .header .container {
-//   display: flex;
-  
- 
-// }
+
+.header .container {
+  // display: flex;
+  position: relative;
+
+}
 
 .nav {
   display: flex;
   align-items: center;
-  position: relative;
+  
   justify-content: space-between;
 
     &__logo--link {
@@ -25,6 +26,7 @@
   }
 }
 
+
 .menu-button {
   @media screen and (min-width: 481px) {
     display: none;
@@ -36,6 +38,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 111;
 
   &:hover,
   &:focus {
@@ -59,20 +62,28 @@
   fill: currentColor;
 }
 
-.menu-container{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 480px;
+.menu__container{
   padding-left: 40px;
   background-color: #ffffff;
- border: 1px solid red;
-  &.is-open{
-    display: block;
+
+ 
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 796px;
+
+    z-index: 10;
+
+    &.is-open {
+      display: block;
+    }
   }
 }
+
 
 .nav__list {
   @media screen and (max-width: 480px) {

@@ -28,7 +28,7 @@
 
 
 .nav__list {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @extend %list;
@@ -41,7 +41,7 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav__item {
     margin-bottom: 32px;
   
@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .current::after {
     content: "";
     position: absolute;

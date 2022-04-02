@@ -37,7 +37,7 @@
 .menu__container {
     
     @media screen and (max-width: 480px) {
-        padding: 48px 0 48px 40px;
+        padding: 48px 40px;
            background-color: #ffffff;
 
 
@@ -64,6 +64,7 @@
 .menu-social__list{
     @extend %list;
     display: flex;
+    flex-wrap: wrap;
 
     .menu-social__items{
         &:not(:last-child){

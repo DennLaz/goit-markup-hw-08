@@ -23,6 +23,7 @@
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--hover-time), opacity 250ms var(--hover-time);
+  z-index: 1000;
 
   @media screen and (min-width: 768px) {
     max-width: 528px;

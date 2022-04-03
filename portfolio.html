@@ -389,115 +389,117 @@
 
     <!--footer-->
     <footer class="footer">
-      <div class="container container--tablet">
-        <div class="footer_wrapper">
-          <a href="./index.html" class="footer__logo"
-            ><span class="nav__logo">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul class="address__list list">
-              <li>
+      <div class="container container-wrap">
+        <div class="container--tablet">
+          <div class="footer_wrapper">
+            <a href="./index.html" class="footer__logo"
+              ><span class="nav__logo">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="address__list list">
+                <li>
+                  <a
+                    class="address__link"
+                    href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address__desc">
+                  <a class="address__contact" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__desc">
+                  <a class="address__contact" href="tel:+38-099-111-11-11"
+                    >+38-099-111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="wrapper">
+            <h3 class="slogan">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <ul class="socials list">
+              <li class="socials__items">
                 <a
-                  class="address__link"
-                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  class="socials__link"
+                  href="https://www.instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  aria-label="Instagram"
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__desc">
-                <a class="address__contact" href="mailto:info@example.com"
-                  >info@example.com</a
+              <li class="socials__items">
+                <a
+                  class="socials__link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter"
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__desc">
-                <a class="address__contact" href="tel:+38-099-111-11-11"
-                  >+38-099-111-11-11</a
+              <li class="socials__items">
+                <a
+                  class="socials__link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__items">
+                <a
+                  class="socials__link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="wrapper">
-          <h3 class="slogan">ПРИСОЕДИНЯЙТЕСЬ</h3>
-          <ul class="socials list">
-            <li class="socials__items">
-              <a
-                class="socials__link"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+        <div class="footer-wrap">
+          <div class="call">
+            <h3 class="call__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+            <div class="call__box">
+              <form class="call__form">
+                <label for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="E-mail"
+                  />
+                </label>
+              </form>
+              <button class="call__btn" type="button">
+                Подписаться
+                <svg class="call__icon" width="24" height="24">
+                  <use
+                    href="./images/icon-svg/icon-send.svg#icon-icon-send"
+                  ></use>
                 </svg>
-              </a>
-            </li>
-            <li class="socials__items">
-              <a
-                class="socials__link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="twitter"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__items">
-              <a
-                class="socials__link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="facebook"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__items">
-              <a
-                class="socials__link"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="linkedin"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-wrap">
-        <div class="call">
-          <h3 class="call__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-          <div class="call__box">
-            <form class="call__form">
-              <label for="email">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
-                />
-              </label>
-            </form>
-            <button class="call__btn" type="button">
-              Подписаться
-              <svg class="call__icon" width="24" height="24">
-                <use
-                  href="./images/icon-svg/icon-send.svg#icon-icon-send"
-                ></use>
-              </svg>
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>

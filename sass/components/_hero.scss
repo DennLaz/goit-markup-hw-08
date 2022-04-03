@@ -17,7 +17,7 @@
   background-color: var(--bg-footer-color);
   padding: 118px 0;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
     min-height: 400px;
 
@@ -26,6 +26,18 @@
       rgba(47, 48, 58, 0.4)),
     url(../images/bg-img/header_tablet.jpg);
     background-size: contain;
+  }
+
+  @media screen and (min-width: 1200px){
+    max-width: 1600px;
+    width: 100%;
+    min-height: 600px;
+      background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/bg-img/img.jpg);
+      background-size: auto;
+    padding: 200px 0;
   }
 
   &__title {
@@ -41,7 +53,7 @@
     text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
-      width: 696px;
+      max-width: 696px;
       font-size: 44px;
       line-height: 1.36;
     }

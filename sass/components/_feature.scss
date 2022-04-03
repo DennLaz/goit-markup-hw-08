@@ -1,7 +1,7 @@
 .feature {
   padding-top: 60px;
 
-  @media screen and (min-width: 1199) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
 
@@ -60,6 +60,10 @@
 
   &--last {
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px){
+    margin: 0;
   }
 }
 

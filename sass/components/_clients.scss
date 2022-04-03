@@ -1,6 +1,10 @@
 .clients {
   padding: 60px 0;
 
+  @media screen and (min-width: 1200px){
+    padding: 94px 0;
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -11,6 +15,11 @@
     border-radius: 4px;
     color: #afb1b8;
     transition: color 250ms var(--hover-time), border 250ms var(--hover-time);
+
+    @media screen and (min-width: 1200px){
+      width: 170px;
+      height: 92px;
+    }
   }
 
   &__link:hover {
@@ -25,6 +34,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+
+  @media screen and (min-width: 1200px){
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__icon {

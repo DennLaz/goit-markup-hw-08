@@ -89,6 +89,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section__items {
+    flex-wrap: nowrap;
+  }
+}
+
 .header .container {
   position: relative;
 }
@@ -116,6 +122,12 @@ body {
 @media screen and (min-width: 768px) {
   .nav__logo--link {
     margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__logo--link {
+    margin-right: 93px;
   }
 }
 
@@ -181,10 +193,17 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .menu-list {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-list {
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -235,6 +254,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-list__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .menu-list__link:focus, .menu-list__link:hover {
   color: var(--special-text-color);
 }
@@ -250,7 +276,7 @@ body {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-list__icon--email {
     width: 14px;
     height: 10px;
@@ -420,6 +446,12 @@ body {
 .footer {
   background-color: var(--bg-footer-color);
   padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 0;
+  }
 }
 
 .footer__logo {
@@ -619,6 +651,12 @@ body {
   display: flex;
   align-items: center;
   gap: 74px;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__container {
+    gap: 305px;
+  }
 }
 
 @media screen and (max-width: 767px) {

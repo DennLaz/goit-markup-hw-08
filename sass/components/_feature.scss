@@ -17,15 +17,24 @@
     background-position: center;
     background-size: 70px;
     border-radius: 4px;
+
+    @media screen and (min-width: 768px){
+      max-width: 354px;
+      
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    &__subject{
+      max-width: 354px;
+    }
   }
 }
 
-@media screen and (min-width: 768px) {
-  .feature__subject {
-    width: calc((100%-90px) / 4);
-  }
-}
 
+// .feature__subject {
+//   width: calc((100%-90px) / 4);
+// }
 
 .feature__subtitle {
   color: var(--title-text-color);

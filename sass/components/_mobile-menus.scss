@@ -35,6 +35,9 @@
 }
 
 .menu__container {
+    display: flex;
+    align-items: center;
+    gap: 74px;
     
     @media screen and (max-width: 767px) {
         padding: 48px 40px;
@@ -57,8 +60,12 @@
 }
 
 
-.menu__nav--nav__list {
-    @extend %list;
+
+@media screen and (min-width: 768px){
+    .menu-social{
+        display: none;
+    }
+    
 }
 
 .menu-social__list{
@@ -76,7 +83,7 @@
         
 
     .menu-social__link {
-        font-family: 'Roboto';
+        font-family: "Roboto";
         font-style: normal;
         font-weight: 500;
         font-size: 18px;

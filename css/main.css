@@ -423,13 +423,13 @@ body {
   border-radius: 4px;
   transition: transform 250ms var(--hover-time), opacity 250ms var(--hover-time);
   z-index: 1000;
-  overflow-y: scroll;
 }
 
 @media screen and (max-width: 767px) {
   .modal {
     max-height: 610px;
     height: 100%;
+    overflow-y: auto;
   }
 }
 

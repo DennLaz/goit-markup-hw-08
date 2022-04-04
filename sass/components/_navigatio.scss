@@ -1,8 +1,6 @@
-
 .header .container {
   // display: flex;
   position: relative;
-
 }
 
 .nav {
@@ -12,10 +10,8 @@
   @media screen and (max-width: 767px) {
     justify-content: space-between;
   }
-  
-  
 
-    &__logo--link {
+  &__logo--link {
     color: var(--logo-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -27,8 +23,8 @@
     @media screen and (min-width: 768px) {
       margin-right: 88px;
     }
-    
-    @media screen and (min-width: 1200px){
+
+    @media screen and (min-width: 1200px) {
       margin-right: 93px;
     }
   }
@@ -37,29 +33,25 @@
 .menu__nav--nav__list {
   @extend %list;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     gap: 50px;
-    }
   }
-  
-
+}
 
 .nav__logo {
   color: var(--special-text-color);
 }
 
-
 @media screen and (max-width: 767px) {
   .nav__item {
     margin-bottom: 32px;
-  
+
     &:last-child {
-      margin-bottom: 302px;
+      margin-bottom: 0px;
     }
   }
 }
-
 
 .nav__link {
   display: block;
@@ -76,7 +68,7 @@
     color: var(--special-text-color);
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
@@ -85,7 +77,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .current::after {
     content: "";
     position: absolute;
@@ -97,9 +88,9 @@
     background-color: var(--special-text-color);
     border-radius: 2px;
   }
+}
 
-  .nav__link.current {
-    position: relative;
-    color: var(--special-text-color);
-  }
+.nav__link.current {
+  position: relative;
+  color: var(--special-text-color);
 }

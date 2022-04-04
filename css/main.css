@@ -158,7 +158,7 @@ body {
     margin-bottom: 32px;
   }
   .nav__item:last-child {
-    margin-bottom: 302px;
+    margin-bottom: 0px;
   }
 }
 
@@ -198,10 +198,11 @@ body {
     background-color: var(--special-text-color);
     border-radius: 2px;
   }
-  .nav__link.current {
-    position: relative;
-    color: var(--special-text-color);
-  }
+}
+
+.nav__link.current {
+  position: relative;
+  color: var(--special-text-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -312,7 +313,7 @@ body {
 }
 
 .hero {
-  max-width: 480px;
+  max-width: 1600px;
   width: 100%;
   height: 400px;
   margin-left: auto;
@@ -322,7 +323,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--bg-footer-color);
-  background-size: 480px 400px;
+  background-size: cover;
   padding: 118px 0;
 }
 
@@ -334,10 +335,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    max-width: 768px;
-    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img/header_tablet.jpg);
-    background-size: 768px 400px;
+    background-size: cover;
   }
 }
 
@@ -349,7 +348,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img/header_desc.jpg);
     background-size: 1600px 600px;
@@ -1153,29 +1151,33 @@ body {
 
 .menu__container {
   display: flex;
-  align-items: center;
-  gap: 74px;
-}
-
-@media screen and (min-width: 1200px) {
-  .menu__container {
-    gap: 305px;
-  }
 }
 
 @media screen and (max-width: 767px) {
   .menu__container {
     padding: 48px 40px;
     background-color: #ffffff;
-    display: none;
-    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
     z-index: 10;
+    transition: transform 250ms var(--hover-time);
   }
   .menu__container.is-open {
-    display: block;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__container {
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
   }
 }
 

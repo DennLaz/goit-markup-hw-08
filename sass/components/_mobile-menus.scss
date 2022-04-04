@@ -36,28 +36,33 @@
 
 .menu__container {
   display: flex;
-  align-items: center;
-  gap: 74px;
-
-  @media screen and (min-width: 1200px) {
-    gap: 305px;
-  }
 
   @media screen and (max-width: 767px) {
     padding: 48px 40px;
     background-color: #ffffff;
 
-    display: none;
-    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
 
     z-index: 10;
+    transition: transform 250ms var(--hover-time);
 
     &.is-open {
-      display: block;
+      transform: translateX(0);
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
   }
 }
 

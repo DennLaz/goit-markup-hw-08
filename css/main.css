@@ -350,7 +350,6 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    width: 100%;
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img/header_desc.jpg);
     background-size: 1600px 600px;
@@ -408,7 +407,6 @@ body {
   transform: scale(1);
   background-color: rgba(0, 0, 0, 0.2);
   transition: transform 250ms var(--hover-time), opacity 250ms var(--hover-time);
-  overflow-y: scroll;
   z-index: 112;
 }
 
@@ -418,6 +416,7 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
   max-width: 450px;
+  height: 100%;
   width: 100%;
   padding: 40px;
   background-color: var(--bg-color);
@@ -425,6 +424,7 @@ body {
   border-radius: 4px;
   transition: transform 250ms var(--hover-time), opacity 250ms var(--hover-time);
   z-index: 1000;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 1200px) {

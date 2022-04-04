@@ -17,7 +17,6 @@
   transform: translate(-50%, -50%);
   position: absolute;
   max-width: 450px;
-  height: 100%;
   width: 100%;
   padding: 40px;
   background-color: var(--bg-color);
@@ -27,6 +26,11 @@
   transition: transform 250ms var(--hover-time), opacity 250ms var(--hover-time);
   z-index: 1000;
   overflow-y: scroll;
+
+  @media screen and (max-width: 767px) {
+    max-height: 610px;
+    height: 100%;
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;

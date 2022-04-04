@@ -1,45 +1,41 @@
 .menu-list {
   @extend %list;
-  
+
   // margin-left: auto;
   // align-items: center;
   // justify-content: center;
   // gap: 50px;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
   }
-  
 
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
-  
+
   &__item {
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       margin-bottom: 32px;
-      
+
       &:first-child {
         margin-bottom: 64px;
-      } 
+      }
     }
 
-    @media screen and (min-width: 768px) and (max-width:1199px){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
 
-      &:last-child{
+      &:last-child {
         margin: 0;
       }
-      
     }
-
-    
   }
 
   &__link {
@@ -55,22 +51,26 @@
     text-decoration: none;
     transition: color 250ms var(--hover-time);
 
-    &--number{
+    &--number {
       font-size: 34px;
       line-height: 1.14;
+
+      @media screen and (max-width: 377px) {
+        font-size: 27px;
+      }
     }
 
-    &--email{
+    &--email {
       font-size: 24px;
       line-height: 1.16;
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       font-size: 12px;
       line-height: 1.16;
     }
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.14;
     }
@@ -83,17 +83,16 @@
 }
 
 @media screen and (max-width: 767px) {
-  .menu-list__icon{
+  .menu-list__icon {
     display: none;
   }
-  
 }
 .menu-list__icon {
   margin-right: 10px;
   fill: currentColor;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px){
-    &--email{
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &--email {
       width: 14px;
       height: 10px;
     }
@@ -102,6 +101,5 @@
       width: 10px;
       height: 14px;
     }
-    
   }
 }
